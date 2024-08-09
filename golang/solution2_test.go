@@ -21,18 +21,10 @@ func Test_CountOccurrencesChar(t *testing.T) {
 	}
 
 	for i, tc := range []testCase{
-		{
-			"atlas", 'a', 101, 41,
-		},
-		{
-			"atlas", 't', 101, 20,
-		},
-		{
-			"atlas", 'l', 101, 20,
-		},
-		{
-			"atlas", 's', 101, 20,
-		},
+		{"atlas", 'a', 101, 41,},
+		{"atlas", 't', 101, 20,},
+		{"atlas", 'l', 101, 20,},
+		{"atlas", 's', 101, 20,},
 	} {
 		t.Run(fmt.Sprintf("%d: For string: '%s' and target char: '%c', with length: %d, expected count is: %d",
 			i, tc.data, tc.targetChar, tc.lengthToConsider, tc.expected), func(t *testing.T) {

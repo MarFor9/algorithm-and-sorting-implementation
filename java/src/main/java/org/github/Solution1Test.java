@@ -4,7 +4,17 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+/*
+Given list of unordered non-distinct int numbers, find the Kth largest number
+input: List<Integer> nums; int k;
+output: return k-th largest number;
 
+example:
+nums = 1, 3, 2, 6, 7, 6, 2, 5, 2, 10
+k = 2
+
+answer = 7
+*/
 public class Solution1Test {
 
     @Test
